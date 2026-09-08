@@ -1,0 +1,124 @@
+{
+  "campus": "Central Campus Cafeteria",
+  "service": "Lunch",
+  "hours": "11:30 AM - 2:00 PM",
+  "days": {
+    "Monday": {
+      "day": "Monday",
+      "date": "2026-09-08",
+      "meals": [
+        {
+          "id": "mon-meal-1",
+          "option": "Option A",
+          "name": "Soy-Glazed Tofu & Fresh Vegetable Bibimbap",
+          "koreanName": "두부 야채 비빔밥",
+          "description": "Steamed multigrain rice served with seasoned spinach, bean sprouts, shiitake mushrooms, crisp shredded zucchini, pan-seared tofu, and sweet-savory gochujang chili sauce.",
+          "price": 5500,
+          "currency": "KRW",
+          "isVegetarian": true,
+          "dietaryLabel": "Vegetarian"
+        },
+        {
+          "id": "mon-meal-2",
+          "option": "Option B",
+          "name": "Aged Kimchi Stew with Pork & Soft Tofu",
+          "koreanName": "돼지고기 김치찌개 정식",
+          "description": "Hearty slow-simmered kimchi stew with tender sliced pork and soft tofu, served with warm white rice, seasoned roasted seaweed (gim), and daily side dishes.",
+          "price": 6000,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        },
+        {
+          "id": "mon-meal-3",
+          "option": "Option C",
+          "name": "Crispy Pork Cutlet (Donkatsu) & Japanese Curry",
+          "koreanName": "수제 돈까스 & 카레",
+          "description": "Panko-crusted pork cutlet deep-fried to golden perfection, served over steamed rice with rich aromatic vegetable curry, pickled radish, and shredded cabbage salad.",
+          "price": 6500,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        }
+      ]
+    },
+    "Tuesday": {
+      "day": "Tuesday",
+      "date": "2026-09-09",
+      "meals": [
+        {
+          "id": "tue-meal-1",
+          "option": "Option A",
+          "name": "Mushroom & Vegetable Japchae Rice Bowl",
+          "koreanName": "버섯 야채 잡채밥",
+          "description": "Stir-fried sweet potato glass noodles with shiitake and king oyster mushrooms, colorful bell peppers, tender spinach, and toasted sesame oil over warm steamed rice.",
+          "price": 5500,
+          "currency": "KRW",
+          "isVegetarian": true,
+          "dietaryLabel": "Vegetarian"
+        },
+        {
+          "id": "tue-meal-2",
+          "option": "Option B",
+          "name": "Spicy Stir-Fried Pork (Jeyuk Bokkeum) Set",
+          "koreanName": "제육볶음 정식",
+          "description": "Thinly sliced pork marinated in rich gochujang chili sauce and wok-tossed with scallions and sweet onions, served with steamed rice, soup, and fresh lettuce wraps.",
+          "price": 6000,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        },
+        {
+          "id": "tue-meal-3",
+          "option": "Option C",
+          "name": "Golden Chicken Katsu with Japanese Brown Sauce",
+          "koreanName": "수제 치킨까스 정식",
+          "description": "Tender chicken cutlet breaded with crispy panko crumbs, served with finely shredded cabbage salad in toasted sesame dressing, tangy tonkatsu sauce, and rice.",
+          "price": 6500,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        }
+      ]
+    },
+    "Wednesday": {
+      "day": "Wednesday",
+      "date": "2026-09-10",
+      "meals": [
+        {
+          "id": "wed-meal-1",
+          "option": "Option A",
+          "name": "Chickpea & Roasted Vegetable Golden Curry",
+          "koreanName": "병아리콩 채소 카레",
+          "description": "Hearty chickpeas simmered with tender potatoes, sweet carrots, and zucchini in a fragrant mild Japanese golden curry, served over warm multigrain rice.",
+          "price": 5500,
+          "currency": "KRW",
+          "isVegetarian": true,
+          "dietaryLabel": "Vegetarian"
+        },
+        {
+          "id": "wed-meal-2",
+          "option": "Option B",
+          "name": "Traditional Beef Bulgogi Rice Bowl",
+          "koreanName": "소불고기 덮밥",
+          "description": "Tender thinly sliced beef ribeye sautéed with sweet onions, scallions, and enoki mushrooms in an authentic sweet soy glaze, served over steamed white rice.",
+          "price": 6500,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        },
+        {
+          "id": "wed-meal-3",
+          "option": "Option C",
+          "name": "Rustic Soybean Paste Stew & Grilled Mackerel",
+          "koreanName": "된장찌개 & 고등어구이",
+          "description": "Classic fermented soybean stew with tofu, zucchini, and clams, paired with a savory crispy salted grilled mackerel fillet, steamed rice, and daily banchan.",
+          "price": 6000,
+          "currency": "KRW",
+          "isVegetarian": false,
+          "dietaryLabel": "Non-Vegetarian"
+        }
+      ]
+    }
+  }
+}

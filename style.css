@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Campus Lunch - Minimalist Black & White Stylesheet
+   ========================================================================== */
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+/* Page Layout */
+.page-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px 16px 40px 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.site-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+}
+
+/* Controls Card (Day Selector & Count) */
+.controls-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.selector-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.selector-label {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #111111;
+  white-space: nowrap;
+}
+
+.select-wrapper {
+  position: relative;
+  min-width: 140px;
+}
+
+.day-select {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 7px 32px 7px 12px;
+  cursor: pointer;
+  min-height: 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23111111' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.day-select:focus {
+  outline: 2px solid #111111;
+  outline-offset: 1px;
+}
+
+/* Quick Day Tabs */
+.day-pills {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.day-pill {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 38px;
+}
+
+.day-pill:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.day-pill.active {
+  background-color: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+/* Meal Count Display */
+.count-row {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-count {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+/* Card Grid */
+.meals-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Thin Gray Meal Card */
+.meal-card {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.meal-card:hover {
+  border-color: #9ca3af;
+}
+
+/* Card Header (Option badge & Dietary label) */
+.meal-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.option-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #111111;
+  background-color: #f3f4f6;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-vegetarian {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-standard {
+  background-color: #f9fafb;
+  color: #4b5563;
+  border: 1px solid #e5e7eb;
+}
+
+/* Card Body */
+.meal-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meal-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.35;
+}
+
+.meal-korean-name {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.meal-description {
+  font-size: 0.9375rem;
+  color: #222222;
+  line-height: 1.55;
+}
+
+/* Card Footer (Price) */
+.meal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 10px;
+  margin-top: 4px;
+}
+
+.meal-price {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: -0.01em;
+}
+
+/* Footer */
+.footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.footer-note {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+/* Responsive / Phone Optimizations */
+@media (max-width: 480px) {
+  .page-wrapper {
+    padding: 16px 12px 32px 12px;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .controls-card {
+    padding: 14px;
+    gap: 10px;
+  }
+
+  .selector-label {
+    font-size: 0.875rem;
+  }
+
+  .day-select {
+    min-height: 38px;
+    font-size: 0.875rem;
+  }
+
+  .day-pill {
+    padding: 6px 8px;
+    font-size: 0.8125rem;
+    min-height: 36px;
+  }
+
+  .meal-card {
+    padding: 16px;
+    gap: 10px;
+  }
+
+  .meal-name {
+    font-size: 1.0625rem;
+  }
+
+  .meal-description {
+    font-size: 0.875rem;
+  }
+
+  .meal-price {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Lunch - Daily Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="site-title">Campus Lunch</h1>
+        <p class="subtitle" id="menu-subtitle">Monday Menu &bull; Central Campus Cafeteria</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <!-- Labeled Day Selector Card -->
+      <section class="controls-card" aria-label="Menu Day Selection">
+        <div class="selector-row">
+          <label for="day-select" class="selector-label">Select Day:</label>
+          <div class="select-wrapper">
+            <select id="day-select" class="day-select" aria-label="Select day of the week">
+              <option value="Monday" selected>Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="day-pills" role="tablist" aria-label="Day selection shortcuts">
+          <button type="button" class="day-pill active" data-day="Monday" role="tab" aria-selected="true">Monday</button>
+          <button type="button" class="day-pill" data-day="Tuesday" role="tab" aria-selected="false">Tuesday</button>
+          <button type="button" class="day-pill" data-day="Wednesday" role="tab" aria-selected="false">Wednesday</button>
+        </div>
+
+        <div class="count-row">
+          <span id="meal-count" class="meal-count" aria-live="polite">Showing 3 meals for Monday</span>
+        </div>
+      </section>
+
+      <!-- Meal Cards Grid -->
+      <div id="meals-container" class="meals-grid" aria-label="Lunch Menu Cards">
+        <!-- Rendered dynamically by app.js -->
+        <noscript>
+          <div class="meal-card">
+            <h2>JavaScript Required</h2>
+            <p>Please enable JavaScript in your browser to view today's campus lunch menu.</p>
+          </div>
+        </noscript>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-note">All prices are in South Korean Won (KRW). Lunch service: 11:30 AM &ndash; 2:00 PM.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
